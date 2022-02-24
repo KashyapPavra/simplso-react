@@ -1,0 +1,766 @@
+.App {
+	color: var(--simplso-black);
+	font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;
+	font-size: 16px;
+	line-height: 1.3em;
+	font-weight: 400;
+}
+.App a {
+	color: inherit;
+}
+.App a:hover {
+	text-decoration: none;
+}
+.customBtn {
+	border: 0px;
+	border-radius: 50px;
+	text-align: center;
+	margin: 1em 0em;
+}
+.navigScroll {
+	box-shadow: 0px 6px 5px -5px rgba(0, 0, 0, 0.75);
+	transition: all 0.7s;
+}
+.blueBtn {
+	color: #ffffff;
+	background-color: var(--simplso-blue);
+}
+.yellowHover:hover {
+	transition: all 0.5s;
+	color: #000000;
+	background-color: var(--simplso-yellow);
+}
+.blueHover:hover {
+	transition: all 0.5s;
+	color: #ffffff;
+	background-color: var(--simplso-blue);
+}
+.whiteBtn {
+	color: var(--simplso-blue);
+	background-color: #ffffff;
+}
+.consultCTA {
+	width: 250px;
+	height: 60px;
+}
+.boxShadow {
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+.sectionArea {
+	padding: 6rem 5% 4rem 5%;
+}
+.blueBG {
+	background-color: var(--simplso-blue);
+}
+.yellowBG {
+	background-color: var(--simplso-yellow);
+}
+.navigList li {
+	list-style-type: none;
+}
+#homeSection {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 50% 50%;
+	grid-template-areas:
+		"homeLeft"
+		"homeRight";
+	align-items: center;
+}
+.homeLeft {
+	grid-area: homeLeft;
+	display: grid;
+	grid-template-columns: 100%;
+	justify-items: start;
+}
+.homeRight {
+	margin-top: 1rem;
+	grid-area: homeRight;
+	display: grid;
+	grid-template-columns: 100%;
+	place-self: center;
+}
+.homeRight img {
+	width: 500px;
+}
+#homeHeading,
+.contactHeading {
+	font-size: 32px;
+	line-height: 1.5em;
+	font-weight: 700;
+}
+#homeHeading {
+	padding-bottom: 0;
+	margin-bottom: 0.5em;
+	background: -webkit-linear-gradient(
+		to bottom,
+		#ffffff 80%,
+		var(--simplso-yellow) 0%
+	);
+	background: -o-linear-gradient(
+		to bottom,
+		#ffffff 80%,
+		var(--simplso-yellow) 0%
+	);
+	background: -moz-linear-gradient(
+		to bottom,
+		#ffffff 80%,
+		var(--simplso-yellow) 0%
+	);
+	background: linear-gradient(to bottom, #ffffff 80%, var(--simplso-yellow) 0%);
+}
+
+#homeSubline {
+	font-size: 20px;
+	line-height: 1.3em;
+	padding-bottom: 0px;
+	margin-bottom: 1em;
+	font-weight: 300;
+}
+
+#servicesSection {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas:
+		"sectionHeading"
+		"webdev"
+		"mobileapps"
+		"marketing";
+	align-items: center;
+	align-items: start;
+}
+.sectionHeading {
+	grid-area: sectionHeading;
+	justify-self: center;
+	font-size: 28px;
+	line-height: 1.5em;
+	font-weight: 700;
+}
+.whiteHeading {
+	color: #ffffff;
+}
+.sectionHeading::after {
+	display: block;
+	background-color: var(--simplso-yellow);
+	height: 5px;
+	width: 50px;
+	content: "";
+	margin: 10px auto 0px auto;
+}
+
+.servicesCardArea {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto;
+	grid-gap: 15px;
+	padding: 1.5rem 2rem;
+	margin: 30px 15px 0px 15px;
+	height: 100%;
+	place-content: start;
+}
+.cardIcon {
+	width: 100px;
+	height: 100px;
+	background: rgba(0, 82, 228, 0.1);
+	border-radius: 50%;
+	place-self: center;
+	display: grid;
+}
+.cardIcon img {
+	place-self: center;
+}
+.cardHeading {
+	font-size: 20px;
+	line-height: 1.3em;
+	margin: 0.5em 0em;
+	font-weight: 700;
+	justify-self: center;
+}
+.cardList {
+	justify-self: start;
+	padding: 0px;
+}
+.cardListItem {
+	margin: 1em 0em;
+	list-style-type: none;
+}
+.cardListItem::before {
+	/* content: url(/images/icons/listTick.svg); */
+	width: 15px;
+	display: inline-block;
+	margin-right: 1em;
+}
+#uspsSection {
+	display: grid;
+	grid-template-columns: 100%;
+	align-items: center;
+	grid-template-rows: auto auto;
+	grid-gap: 15px;
+	grid-template-areas:
+		"sectionHeading"
+		"uspsList";
+}
+.uspsList {
+	grid-area: uspsList;
+	display: grid;
+	grid-template-columns: 100%;
+	padding: 0px;
+	color: #ffffff;
+}
+.uspsListItem {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	display: grid;
+	grid-template-columns: 100px auto;
+}
+.uspsListItemIcon {
+	width: 100px;
+}
+.uspsListItemInfo {
+	padding-left: 2rem;
+}
+.uspsListItemHeading {
+	font-size: 20px;
+	font-weight: 600;
+	padding-bottom: 0px;
+	margin-bottom: 10px;
+	color: #ffffff;
+}
+.uspsListItemDesc {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.3rem;
+}
+
+#portfolioSection {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-areas:
+		"sectionHeading"
+		"portfolioList";
+	align-items: center;
+	grid-gap: 15px;
+}
+.portfolioList {
+	grid-area: portfolioList;
+	display: grid;
+	grid-template-columns: 100%;
+	padding: 0px;
+}
+.portfolioList li {
+	list-style-type: none;
+}
+.portfolioListItem {
+	display: grid;
+	grid-template-columns: 100%;
+	padding: 2rem 0rem;
+	grid-template-areas:
+		"portfolioListItemImage"
+		"portfolioListItemInfo";
+	margin: 1rem;
+}
+.portfolioListItemInfo {
+	grid-area: portfolioListItemInfo;
+	text-align: center;
+	padding: 0px 3rem;
+}
+.portfolioListItemHeadingArea {
+	margin-bottom: 2rem;
+	display: grid;
+	grid-template-columns: auto;
+}
+.portfolioListItemHeading {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.3em;
+	align-self: center;
+	text-align: center;
+}
+.portfolioListItemTag {
+	color: var(--simplso-blue);
+	background: #f5f5f5;
+	padding: 5px 10px;
+	border-radius: 50px;
+	font-size: 12px;
+	font-weight: 400;
+	height: 30px;
+	align-self: center;
+	text-align: center;
+	margin: 1rem auto 0px auto;
+}
+.portfolioListItemDesc {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.3em;
+	margin: 1rem 1rem 2rem 0rem;
+}
+.portfolioListItemLink {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.3em;
+	color: var(--simplso-blue) !important;
+	margin: 2rem 0rem 0rem 0rem;
+}
+.portfolioListItemImage {
+	grid-area: portfolioListItemImage;
+	margin-bottom: 1rem;
+	place-self: center;
+	width: 400px;
+	padding: 0px 1rem;
+}
+
+#contactSection {
+	display: grid;
+	grid-template-columns: 100%;
+}
+
+.contactHeading {
+	color: var(--simplso-blue);
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4rem;
+}
+.contactCTA {
+	margin-left: auto;
+	margin-right: auto;
+	height: 60px;
+	width: 200px;
+	text-align: center;
+}
+
+#footerSection {
+	padding: 4rem 5% 1rem 5%;
+	display: grid;
+	grid-template-columns: 100%;
+	color: #ffffff;
+}
+
+.leftFooter,
+.rightFooter {
+	display: grid;
+	grid-template-columns: 100%;
+}
+.footerLogo {
+	width: 100px;
+}
+.footerCopyright {
+	align-content: end;
+	display: grid;
+}
+.footerSocialIcon {
+	margin: 0px 1rem;
+}
+.footerContact {
+	margin: 0.5rem 0px;
+}
+.footerSocial {
+	margin-top: 1rem;
+}
+.footerContactText {
+	display: inline-block;
+}
+.footerContactIcon {
+	display: inline-block;
+	margin-right: 2rem;
+}
+.footerHead {
+	margin-bottom: 1rem;
+	font-size: 20px;
+	font-weight: 600;
+}
+.customModal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1050;
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	outline: 0;
+	background: rgba(0, 0, 0, 0.3);
+}
+.customModalOpen .customModal {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.customModalInner {
+	max-width: 500px;
+	margin: 4rem auto;
+	background-color: #ffffff;
+	border-radius: 10px;
+}
+.bodyModalOpen {
+	overflow: hidden;
+}
+.modalHead {
+	background-color: var(--simplso-yellow);
+	color: #000;
+	padding: 1rem 2rem;
+	display: grid;
+	grid-template-columns: 90% auto;
+	border-radius: 10px 10px 0px 0px;
+}
+.modalHead h3 {
+	margin: 0px;
+	align-self: center;
+}
+.xBtn {
+	width: 30px;
+	background-color: var(--simplso-blue);
+	color: #ffffff;
+	border-radius: 50%;
+	border: 0px;
+	height: 30px;
+	padding: 0px;
+	justify-self: end;
+	align-self: center;
+}
+.submitBtn {
+	padding: 0.5rem 1rem;
+}
+.customForm {
+	padding: 1rem 2rem;
+}
+.customFormMessage {
+	font-weight: 400;
+	margin: 10px 0px;
+	display: none;
+}
+.customFormMessageSuccess {
+	color: #43a047;
+}
+.customFormMessageError {
+	color: #ef5350;
+}
+.customFormGroup {
+	display: grid;
+	grid-template-columns: 100%;
+}
+.customFormLabel {
+	font-weight: 500;
+}
+/* --------------------- MOBILE-TABLET VIEW --------------------- */
+
+@media only screen and (max-width: 980px) {
+	.navigDesktop {
+		display: none;
+	}
+	#homeSection {
+		padding-top: calc(2rem + 85px);
+	}
+	.navigMobile {
+		display: block;
+	}
+
+	.navigHome {
+		padding: 1rem 5%;
+		position: fixed;
+		width: 100%;
+		background-color: white;
+	}
+	.navigOpen {
+		display: grid !important;
+		width: 100vw !important;
+		transition: all 1s !important;
+	}
+	.navigMobile .navigBar {
+		position: fixed;
+		width: 0vw;
+		height: 100vh;
+		grid-template-columns: 100%;
+		grid-template-rows: auto 1fr auto;
+		grid-template-areas:
+			"navigHead"
+			"navigList";
+		background-color: var(--simplso-blue);
+		color: #ffffff;
+		padding: 1rem 5% 0 5%;
+		display: none;
+		transition: all 1s;
+	}
+	.navigMobile .navigHead {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-areas: "navigLogo navigIcon";
+		grid-area: navigHead;
+	}
+	.navigMobile .navigIcon {
+		justify-self: end;
+		display: grid;
+		width: 100%;
+	}
+	.navigMobile .navigIcon img {
+		width: 40px;
+		justify-self: end;
+		align-self: center;
+	}
+	.navigMobile .navigLogo {
+		grid-area: navigLogo;
+		width: 200px;
+		display: grid;
+	}
+	.navigMobile .navigLogo img {
+		align-self: center;
+	}
+	.navigMobile .navigList {
+		grid-area: navigList;
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(5, 20%);
+		font-size: 40px;
+		font-weight: 500;
+		padding: 0px;
+		color: #ffffff;
+		margin-top: 40px;
+	}
+	.navigMobile .navigList li {
+		display: grid;
+	}
+	.navigMobile .navigListItem {
+		margin: 20px 0rem;
+		align-self: center;
+	}
+	.servicesCardArea {
+		height: auto;
+	}
+	.footerSocialIcon:first-child {
+		margin-left: 0px;
+	}
+	#footerSection {
+		grid-template-columns: 100%;
+		grid-template-rows: 50% 50%;
+		grid-template-areas:
+			"footerRight"
+			"footerLeft";
+	}
+	.leftFooter {
+		grid-area: footerLeft;
+		margin-top: 2rem;
+	}
+	.rightFooter {
+		grid-area: footerRight;
+	}
+	.footerLogo {
+		display: none;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+}
+@media only screen and (min-width: 480px) {
+	.contactHeading {
+		background: -webkit-linear-gradient(
+			to bottom,
+			var(--simplso-yellow) 60%,
+			#ffffff 0%
+		);
+		background: -o-linear-gradient(
+			to bottom,
+			var(--simplso-yellow) 60%,
+			#ffffff 0%
+		);
+		background: -moz-linear-gradient(
+			to bottom,
+			var(--simplso-yellow) 60%,
+			#ffffff 0%
+		);
+		background: linear-gradient(
+			to bottom,
+			var(--simplso-yellow) 60%,
+			#ffffff 0%
+		);
+	}
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+}
+@media only screen and (max-width: 551px) {
+	.customModalInner {
+		width: 300px;
+	}
+}
+@media only screen and (min-width: 769px) and (max-width: 980px) {
+}
+@media only screen and (min-width: 769px) {
+	#homeSection {
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 100%;
+		grid-template-areas: "homeLeft homeRight";
+		padding-top: calc(6rem + 85px);
+	}
+	.uspsList {
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 50% 50%;
+	}
+	.uspsListItem:nth-child(odd) {
+		margin-right: 3rem;
+	}
+	.uspsListItem:nth-child(even) {
+		margin-left: 3rem;
+	}
+	.uspsListItemHeading {
+		font-size: 24px;
+	}
+	.uspsListItemDesc {
+		font-size: 18px;
+	}
+	#footerSection {
+		grid-template-columns: 50% 50%;
+		padding: 4rem 0rem 4rem 0rem;
+	}
+	.rightFooter {
+		text-align: right;
+	}
+	.footerSocialIcon:last-child {
+		margin-right: 0px;
+	}
+}
+/* --------------------- DESKTOP VIEW --------------------- */
+@media only screen and (min-width: 981px) {
+	.navigMobile {
+		display: none;
+	}
+	.navigDesktop {
+		display: block;
+		position: fixed;
+		width: 100%;
+		background-color: #ffffff;
+	}
+
+	.navigDesktop .navigBar {
+		display: grid;
+		grid-template-columns: 200px 1fr 700px;
+		grid-template-rows: auto;
+		grid-template-areas: "navigLogo . navigList";
+	}
+
+	.navigDesktop .navigLogo {
+		grid-area: navigLogo;
+	}
+	.navigDesktop .navigList {
+		grid-area: navigList;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-template-rows: auto;
+		font-size: 20px;
+		font-weight: 500;
+		padding: 0px;
+		place-items: center;
+		justify-content: space-between;
+		align-content: center;
+		margin: 0rem;
+	}
+
+	.navigDesktop .navigListItem {
+		place-self: center;
+		cursor: pointer;
+	}
+	#homeHeading {
+		font-size: 40px;
+	}
+	.contactHeading {
+		font-size: 52px;
+	}
+	#homeSubline {
+		font-size: 24px;
+	}
+	.homeRight img {
+		width: auto;
+	}
+	#servicesSection {
+		grid-template-columns: 33.3% 33.3% 33.3%;
+		grid-template-rows: auto auto;
+		grid-template-areas:
+			"sectionHeading sectionHeading sectionHeading"
+			"webdev mobileapps marketing";
+	}
+	#webdev {
+		grid-area: webdev;
+	}
+	#mobileapps {
+		grid-area: mobileapps;
+	}
+	#marketing {
+		grid-area: marketing;
+	}
+	.sectionHeading {
+		font-size: 38px;
+	}
+	.cardHeading {
+		font-size: 24px;
+	}
+	.cardList {
+		font-size: 18px;
+	}
+	.portfolioListItemFull {
+		padding: 4rem;
+		grid-template-columns: 50% 50%;
+		grid-template-areas: "portfolioListItemInfo portfolioListItemImage";
+	}
+	.portfolioListItemFull .portfolioListItemHeadingArea {
+		margin-bottom: 2rem;
+		display: inline-grid;
+		grid-template-columns: auto auto;
+	}
+	.portfolioListItemFull .portfolioListItemHeading {
+		margin-right: 1rem;
+	}
+	.portfolioListItemFull .portfolioListItemTag {
+		margin-top: 0rem;
+	}
+	.portfolioListItemFull .portfolioListItemInfo {
+		text-align: left;
+	}
+	.portfolioListItemHeading {
+		font-size: 30px;
+	}
+	.portfolioListItemDesc {
+		font-size: 18px;
+	}
+	.portfolioListItemLink {
+		font-size: 18px;
+	}
+	.portfolioListItemHalf {
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+	.portfolioListItemImage {
+		padding: 0px;
+	}
+
+	.portfolioListItemFull .portfolioListItemImage {
+		margin-bottom: 0rem;
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 981px) and (max-width: 1199px) {
+	.sectionArea {
+		padding: 6rem 3% 4rem 3%;
+	}
+	.navigDesktop .navigBar {
+		padding: 1rem 3%;
+	}
+	#footerSection {
+		margin: 0px;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.sectionArea {
+		padding: 6rem 0rem 4rem 0rem;
+		width: 1080px;
+		margin: 0px auto;
+	}
+	.navigDesktop .navigBar {
+		padding: 1rem 0rem;
+		width: 1080px;
+		margin: 0px auto;
+	}
+	#footerSection {
+		width: 1080px;
+		margin: 0px auto;
+	}
+}
