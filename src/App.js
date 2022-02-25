@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./css/FontsAndColors.css";
 import "./css/style.css";
 import "./components/NavigationBar";
